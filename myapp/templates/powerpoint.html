@@ -1,0 +1,13 @@
+
+
+
+
+{% extends "base.html" %}
+
+{%block content%}
+<form method='POST' action='/myapp/generate_powerpoint'>
+    {% csrf_token %}
+    {{form}}
+    <input type='submit' value='save' />
+</form>
+{%endblock%}

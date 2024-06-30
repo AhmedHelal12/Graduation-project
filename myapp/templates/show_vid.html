@@ -1,0 +1,14 @@
+
+
+
+
+
+
+{% extends "base.html" %}
+
+{%block content%}
+    {%for vid in videos%}
+        <h1> {{vid.text}} </h1>
+        <h1> {{vid.summary}} </h1>
+    {%endfor%}
+{%endblock%}
